@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking - Kmm Reye Travel and Tours</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Kmm Reye Travel and Tours</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="packages.html">Tour Packages</a></li>
+        <li><a href="booking.html">Booking</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h2>Book Your Tour</h2>
+      <form class="booking-form">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+        <label for="package">Select Package</label>
+        <select id="package" name="package" required>
+          <option value="Boracay Getaway">Boracay Getaway</option>
+          <option value="Palawan Adventure">Palawan Adventure</option>
+          <option value="Baguio City Escape">Baguio City Escape</option>
+        </select>
+        <label for="date">Preferred Date</label>
+        <input type="date" id="date" name="date" required>
+        <label for="guests">Number of Guests</label>
+        <input type="number" id="guests" name="guests" min="1" required>
+        <button type="submit">Book Now</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2026 Kmm Reye Travel and Tours. All rights reserved.</p>
+  </footer>
+  <script src="js/booking.js"></script>
+</body>
+</html>
